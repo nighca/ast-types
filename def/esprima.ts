@@ -38,11 +38,12 @@ export default function (fork: Fork) {
       def("SpreadProperty") // Used by Esprima.
     )]);
 
-  // Like ModuleSpecifier, except type:"ExportSpecifier" and buildable.
-  // export {<id [as name]>} [from ...];
-  def("ExportSpecifier")
-    .bases("ModuleSpecifier")
-    .build("id", "name");
+  // comment this cuz it has conflict with def in es6.ts
+  // // Like ModuleSpecifier, except type:"ExportSpecifier" and buildable.
+  // // export {<id [as name]>} [from ...];
+  // def("ExportSpecifier")
+  //   .bases("ModuleSpecifier")
+  //   .build("id", "name");
 
   // export <*> from ...;
   def("ExportBatchSpecifier")
