@@ -1,6 +1,6 @@
 {
   "author": "Ben Newman <bn@cs.stanford.edu>",
-  "name": "ast-types",
+  "name": "@nighca-pkg/ast-types",
   "version": "0.14.2",
   "description": "Esprima-compatible implementation of the Mozilla JS Parser API",
   "keywords": [
